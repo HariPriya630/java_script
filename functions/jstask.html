@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>table task</title>
+</head>
+<body>
+      <table border="1"><!--empty HTML table structure-->
+      	<thead>
+      		<tr>
+      			<th></th>
+      			<th></th>
+      			<th></th>
+      			<th></th>
+      		</tr>
+      	</thead>
+      	<tbody>
+      		<tr>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+      	    </tr>
+      	    <tr>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+      	    </tr>
+      	    <tr>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+      	    </tr>
+      	</tbody>
+      </table>
+       <script type="text/javascript">
+      	let data=[[// array named data is defined
+      		'course name',
+      		'course number',
+      		'course fees',
+      		'place'
+      	],[
+      	    'FSD',
+      	    '208',
+      	    '25000',
+      	    'THUB'
+      	],[
+      	    'AWS',
+      	    '204',
+      	    '22999',
+      	    'THUB'
+      	],[
+      	    'FLUTTER',
+      	    '298',
+      	    '22800',
+      	    'THUB'
+      	]]
+      	let thead=document.getElementsByTagName('th');
+      	for(var i=0;i<data[0].length;i++){
+      		thead[i].innerText=data[0][i];
+      	}
+      	var k=0;//variable k is used to keep track of the index of the <td> elements
+      	let tcells=document.getElementsByTagName('td');
+      	for (var i=1;i<data.length;i++){
+      		for(var j=0;j<data[i].length;j++){
+      			tcells[k].innerText=(data[i][j]);
+      			k++;
+      		}
+      	}
+      </script>
+
+</body>
+</html>

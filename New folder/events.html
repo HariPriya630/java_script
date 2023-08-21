@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<!--inline event handler-->
+	<!-- <button onclick="test()">click here</button> -->
+	<!-- 2nd way event proporties -->
+	<!-- <button id="bt">click here</button> -->
+		<button onclick="show()">show</button>
+		<button onclick="hide()">hide</button>
+	<div id="jj">Hell and heaven</div>
+	<script type="text/javascript">
+		// function test(){
+		// 	alert("loading..")
+		// 	document.body.style.background="yellowgreen"
+		// }
+		// let btn = document.getElementById('bt');
+		// btn.onclick=test()
+		// function test(){
+		// 	alert("load")
+		// 	document.body.style.background="black"
+		// }
+		// let btn = document.getElementById('bt');//asnchronomus
+		// btn.onclick=function (){
+		// alert("load")
+		// document.body.style.background="black"
+		// 3rd way addevent listener
+		// let btn = document.getElementById('bt')
+		// btn.addEventListener('click',test)
+		// function test(){
+		// alert("load")
+		// document.body.style.background="yellow"
+		// }
+		// let btn = document.getElementById('bt')
+		// btn.addEventListener('click',function(){//asynchronomus
+		// alert("load")
+		// document.body.style.background="yellow"
+		// })
+		function show(){
+			document.getElementById('jj').style.display='block'
+		}
+		function hide(){
+			document.getElementById('jj').style.display='none'
+		}
+	</script>
+</body>
+</html>
